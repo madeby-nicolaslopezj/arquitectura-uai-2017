@@ -10,7 +10,7 @@ export default class Logo extends React.Component {
   render () {
     return (
       <div className={styles.logoContainer}>
-        <img className={styles.logo} src='/logo-black.png' />
+        <img className={styles.logo} src='http://regenerativa.cl/img/colab/uai.png' />
       </div>
     )
   }
