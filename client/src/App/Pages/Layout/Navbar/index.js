@@ -17,7 +17,7 @@ export default class Navbar extends React.Component {
           <div className={styles.content}>
             <div className={styles.logo}>
               <Link to='/'>
-                Home
+                Arquitectura
               </Link>
             </div>
             <div className={styles.middle} />
