@@ -1,0 +1,35 @@
+:local(.item) {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+:local(.itemFocused) {
+  composes: item;
+  background-color: #eee;
+}
+
+:local(.image) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+:local(.image) img {
+  border-radius: 5px;
+}
+
+:local(.data) {
+  flex: 1;
+}
+
+:local(.about) {
+  font-size: 13px;
+}
+
+:local(.dataItem) {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 12px;
+}

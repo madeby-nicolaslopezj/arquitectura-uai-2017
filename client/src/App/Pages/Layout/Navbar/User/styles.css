@@ -1,0 +1,71 @@
+:local(.container) {
+  position: relative;
+}
+
+:local(.icon) {
+  cursor: pointer;
+}
+
+:local(.menu) {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  min-width: 220px;
+  flex-direction: column;
+  overflow: hidden;
+  right: 0;
+  top: 60px;
+  border-radius: 5px;
+  background-color: #000;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
+:local(.menu) a {
+  display: inline-block;
+  padding: 15px;
+  flex: 1;
+  cursor: pointer;
+  color: #fff;
+}
+
+:local(.menu) a:hover {
+  background-color: #1b1b1b;
+}
+
+:local(.account) {
+  text-align: center;
+}
+
+:local(.name) {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+:local(.email) {
+  font-size: 13px;
+  color: #fff;
+}
+
+:local(.menuLink) {
+  font-size: 14px;
+  color: #454545;
+}
+
+:local(.menuLink) span {
+  position: relative;
+  top: 1.5px;
+  margin-left: 10px;
+}
+
+.user-menu-enter, .user-menu-leave.user-menu-leave-active {
+  opacity: 0;
+  transform: rotateX(-15deg);
+  transform-origin: 50% -50px;
+}
+
+.user-menu-enter.user-menu-enter-active, .user-menu-leave {
+  opacity: 1;
+  transform: rotateX(0deg);
+  transition: all 300ms ease;
+}

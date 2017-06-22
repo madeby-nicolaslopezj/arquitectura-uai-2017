@@ -1,0 +1,12 @@
+:local(.container) {
+  display: flex;
+}
+
+:local(.children) {
+  flex: 1;
+  margin-right: 10px;
+}
+
+:local(.button) {
+  padding: 2px 0 0 10px;
+}

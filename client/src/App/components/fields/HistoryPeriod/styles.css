@@ -1,0 +1,19 @@
+:local(.container) {
+  text-align: center;
+}
+
+:local(.period) {
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+:local(.selected) {
+  composes: period;
+  background-color: #0069ff;
+  color: #fff;
+}

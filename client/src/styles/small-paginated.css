@@ -1,0 +1,28 @@
+.small-paginated {
+  margin-top: -70px;
+}
+
+.small-paginated .table {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: none;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+.small-paginated table.table,
+.small-paginated .table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.small-paginated table.table th,
+.small-paginated .table table th {
+  text-align: left;
+  font-size: 16px;
+  padding: 5px 5px;
+}
+.small-paginated table.table tr td,
+.small-paginated .table table tr td {
+  font-size: 14px;
+  padding: 5px 5px;
+}
