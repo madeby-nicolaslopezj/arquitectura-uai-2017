@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './styles.css'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import MenuIcon from 'react-icons/lib/md/expand-more'
+import SendDataIcon from 'react-icons/lib/md/send'
+import DashboardIcon from 'react-icons/lib/md/dashboard'
 import autobind from 'autobind-decorator'
 import {Link} from 'react-router'
 import sleep from 'orionsoft-parts/lib/helpers/sleep'
@@ -37,8 +39,13 @@ export default class User extends React.Component {
     if (!this.state.open) return
     return (
       <div className={styles.menu} key='menu'>
-        <Link to='/account' className={styles.account}>
-          <div className={styles.email}>a</div>
+        <Link to='/' className={styles.menuLink}>
+          <SendDataIcon size={20} />
+          <span>Test data</span>
+        </Link>
+        <Link to='/' className={styles.menuLink}>
+          <DashboardIcon size={20} />
+          <span>Dashboard</span>
         </Link>
       </div>
     )

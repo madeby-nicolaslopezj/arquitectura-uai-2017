@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.css'
 
-export default class Home extends React.Component {
+export default class Send extends React.Component {
 
   static propTypes = {
 
@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   render () {
     return (
       <div className={styles.container}>
-        Home
+        Send
       </div>
     )
   }

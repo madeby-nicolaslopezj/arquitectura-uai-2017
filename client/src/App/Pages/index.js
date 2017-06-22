@@ -3,13 +3,13 @@ import Layout from './Layout'
 import NotFound from './Misc/NotFound'
 import Auth from './Auth'
 import {Route} from 'react-router'
-import Home from './Home'
+import Send from './Send'
 
 export default (
   <Route>
     {Auth}
     <Route component={Layout}>
-      <Route path='/' component={Home} />
+      <Route path='/' component={Send} />
     </Route>
     <Route path='*' component={NotFound} />
   </Route>
