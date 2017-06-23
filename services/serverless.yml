@@ -21,3 +21,10 @@ functions:
           path: api/newData
           method: post
           cors: true
+  detect:
+    handler: handler.detect
+    events:
+      - http:
+          path: api/detect
+          method: post
+          cors: true

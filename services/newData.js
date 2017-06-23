@@ -1,11 +1,9 @@
 module.exports.newData = function (event, context, db) {
-  const Points = db.getCollection('points')
+  const Points = db.collection('points')
   const items = JSON.parse(event.body)
   for (const item of items) {
-    Points.insert({
-      date: new Date(),
-      ...item
-    })
+    item.date = new Date()
+    Points.insert(item)
   }
   return items
 }

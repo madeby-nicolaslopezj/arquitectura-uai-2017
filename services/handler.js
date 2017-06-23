@@ -1,5 +1,6 @@
 'use strict'
 const {getData} = require('./getData')
+const {detect} = require('./detect')
 const {newData} = require('./newData')
 const {MongoClient} = require('mongodb')
 
@@ -46,3 +47,4 @@ const run = function (func, event, context, callback) {
 
 module.exports.getData = (event, context, callback) => run(getData, event, context, callback)
 module.exports.newData = (event, context, callback) => run(newData, event, context, callback)
+module.exports.detect = (event, context, callback) => run(detect, event, context, callback)

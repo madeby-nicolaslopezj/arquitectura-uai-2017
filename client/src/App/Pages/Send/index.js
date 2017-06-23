@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './styles.css'
-import Button from 'orionsoft-parts/lib/components/Button'
 import random from 'lodash/random'
 import autobind from 'autobind-decorator'
-import clone from 'lodash/clone'
 import numeral from 'numeral'
+import Camera from './Camera'
 
 const url = 'https://jasyy97d72.execute-api.us-east-1.amazonaws.com/dev/api/newData'
 
@@ -64,17 +63,10 @@ export default class Send extends React.Component {
   render () {
     return (
       <div className={styles.container}>
-        <Button
-          primary
-          onClick={() => this.setState({running: !this.state.running})}>
-          {this.state.running ? 'Stop' : 'Start'}
-        </Button>
-        {url}
-        <br />
+        <Camera setDriving={running => this.setState({running})} />
         <p>
           {numeral(this.state.sentData.length).format('0,0')} points sent
         </p>
-        <pre>{JSON.stringify(clone(this.state.sentData).reverse().slice(0, 3), null, 2)}</pre>
       </div>
     )
   }
